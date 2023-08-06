@@ -10,20 +10,11 @@
     src: url('../fonts/Lato-Regular.ttf');
 }
 
-/* Header */
-
-header {
-    background: url('../img/Pre/2.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    width: 100%;
-    height: 100vh;
-}
-
+/* Body*/
 body {
-    background-color: #000000;
+    background-color: #101114;
 }
+
 
 /* Menú */
 .icon {
@@ -37,6 +28,7 @@ body {
     width: 110px;
     height: 50px;
 }
+
 @media (max-width: 730px) {
     .icon a img {
         width: 70px;
@@ -97,72 +89,99 @@ body {
         font-size: 20px;
     }
 }
+
 @media (max-width: 560px) {
     .menu ul li a {
         font-size: 14px;
     }
 }
 
-
-/* Titulo */
-header h1 {
-    /* display: inline-block; */
-    position: absolute;
-    top: 45vh;
-    left: 20vw;
-    width: 60% !important;
-    font-size: 45px;
-    text-align: center;
-    color: #ffffff;
-    text-shadow: 10px 10px 10px #000000;
-    border-bottom: 2px solid#ffffff;
-    font-family: 'Lato', sans-serif;
+/* Contenido */
+.contenido h1 {
+    margin: 60px 0px;
 }
 
-/* Servicios */
-.servicios {
+.titulo h1 {
+    font-family: 'Lato', sans-serif;
+    color: #f8f9fa;
+}
+
+.queSomos {
     padding: 100px 0px;
 }
 
-.servicios h4 {
-    font-family: 'Lato', sans-serif;
+.imgAuto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: invert(100%);
 }
 
-.servicios h2 {
-    font-family: 'Lato', sans-serif;
+.imgAuto img {
+    height: 100px;
 }
 
-.servicios h3 {
-    font-family: 'Lato', sans-serif;
+.mision {
+    padding: 100px 0px;
+    background-color: #f8f9fa;
+    text-align: center;
 }
 
-.imagen {
-    height: 60px;
+.imgMision {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.servicios p {
-    text-align: center;
-    font-family: 'Lato-Thin', sans-serif;
+.imgMision img {
+    height: 100px;
 }
 
-/* Autos catalogos  */
-.auto {
-    background-color: #0D0D0D;
+.vision {
     padding: 100px 0px;
 }
 
-.auto .texto {
-    width: 60%;
-    margin: auto auto;
-    font-family: 'Lato-Thin', sans-serif;
+.imgVision {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
-.auto .texto p {
-    font-size: 20px;
+.imgVision img {
+    height: 100px;
+    filter: invert(100%);
 }
+
+.valores {
+    background-color: #f8f9fa;
+    padding: 100px 0px;
+    text-align: center;
+}
+
+.imgValores {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgValores img {
+    height: 150px;
+}
+
+.equipo {
+    padding: 100px 0px;
+}
+.imgEquipo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imgEquipo img{
+    height: 100px;
+    filter: invert(100%);
+}
+
 
 /* Footer */
 footer {

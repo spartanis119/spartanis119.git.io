@@ -10,20 +10,11 @@
     src: url('../fonts/Lato-Regular.ttf');
 }
 
-/* Header */
-
-header {
-    background: url('../img/Pre/2.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    width: 100%;
-    height: 100vh;
-}
-
+/* Body*/
 body {
-    background-color: #000000;
+    background-color: #101114;
 }
+
 
 /* Menú */
 .icon {
@@ -37,6 +28,7 @@ body {
     width: 110px;
     height: 50px;
 }
+
 @media (max-width: 730px) {
     .icon a img {
         width: 70px;
@@ -97,71 +89,25 @@ body {
         font-size: 20px;
     }
 }
+
 @media (max-width: 560px) {
     .menu ul li a {
         font-size: 14px;
     }
 }
 
+/* Contenido */
 
-/* Titulo */
-header h1 {
-    /* display: inline-block; */
-    position: absolute;
-    top: 45vh;
-    left: 20vw;
-    width: 60% !important;
-    font-size: 45px;
-    text-align: center;
-    color: #ffffff;
-    text-shadow: 10px 10px 10px #000000;
-    border-bottom: 2px solid#ffffff;
+.contenido {
+    height: 100vh;
+}
+
+.contenido h1 {
     font-family: 'Lato', sans-serif;
 }
 
-/* Servicios */
-.servicios {
-    padding: 100px 0px;
-}
-
-.servicios h4 {
-    font-family: 'Lato', sans-serif;
-}
-
-.servicios h2 {
-    font-family: 'Lato', sans-serif;
-}
-
-.servicios h3 {
-    font-family: 'Lato', sans-serif;
-}
-
-.imagen {
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.servicios p {
-    text-align: center;
-    font-family: 'Lato-Thin', sans-serif;
-}
-
-/* Autos catalogos  */
-.auto {
-    background-color: #0D0D0D;
-    padding: 100px 0px;
-}
-
-.auto .texto {
-    width: 60%;
-    margin: auto auto;
-    font-family: 'Lato-Thin', sans-serif;
-}
-
-.auto .texto p {
-    font-size: 20px;
+.informacion img {
+    filter: invert(100%);
 }
 
 /* Footer */

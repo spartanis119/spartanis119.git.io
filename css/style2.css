@@ -1,45 +1,50 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'SawarabiGothic';
 }
 
 @font-face {
-    font-family: 'SawarabiGothic';
-    src: url('../fonts/SawarabiGothic.ttf');
+    font-family: 'Lato-Thin';
+    src: url('../fonts/Lato-Thin.ttf');
+    font-family: 'Lato';
+    src: url('../fonts/Lato-Regular.ttf');
 }
 
 /* Body*/
 body {
-    background: url('../img/1.jpg');
-    background-size: cover;
-    background-position: center;
+    background-color:#101114 ;
+   /*   */
 }
 
-/* Menú */
 
+/* Menú */
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+
+.icon a img {
+    width: 110px;
+    height: 50px;
+}
+
+@media (max-width: 730px) {
+    .icon a img {
+        width: 70px;
+        height: 35px;
+    }
+}
 
 #contentHeader {
     padding-top: 15px;
 }
 
-.menu a svg {
-    float: left;
-    width: 150px;
-}
-
-@media (max-width: 730px) {
-    .menu a svg {
-        float: left;
-        width: 100px;
-    }
-}
-
 .menu ul {
-    text-align: right;
-    list-style: none;
-    float: right;
-    /*  background-color:  gray; */
+    display: flex;
+    justify-content: end;
+    height: 60px;
 }
 
 .menu ul li {
@@ -51,45 +56,161 @@ body {
 @media (max-width: 730px) {
     .menu ul li {
         display: inline-block;
-        padding: 15px 2px;
+        padding: 15px 7px;
         transition: all 0.4s ease;
     }
 }
+
+@media (max-width: 560px) {
+    .menu ul li {
+        display: inline-block;
+        padding: 15px 4px;
+        transition: all 0.4s ease;
+    }
+}
+
 
 .menu ul li:hover {
     transform: scale(1.1);
 }
 
 .menu ul li:hover a {
-    border-bottom: 2px solid #ffffff;
+    border-bottom: 2px solid #f8f9fa;
 }
 
 .menu ul li a {
     text-decoration: none;
     color: #ffffff;
     font-size: 18px;
+    font-family: 'Lato-Thin', sans-serif;
 }
 
 @media (max-width: 730px) {
     .menu ul li a {
-        font-size: 15px;
+        font-size: 20px;
     }
 }
 
-/* Titulo */
-
-.titulo {
-    margin-top: 20px;
+@media (max-width: 560px) {
+    .menu ul li a {
+        font-size: 14px;
+    }
 }
 
-/* Contenido del catalogo */
-main {
-    margin-top: 80px;
+/* Contenido */
+
+main h2{
+    border-bottom: 2px solid #f8f9fa;
+    width: 40%;
+    margin: auto auto;
 }
 
-main .contenido {
-    width: 80vw;
+.imagen {
+    background: linear-gradient(rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.2),
+            rgba(0, 0, 0, 0.6)), url('../img/interior.webp');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    position: relative;
 }
-.contenido .card{
-    margin-bottom: 50px;
+.imagen .titulo {
+    width: 80%;
+    margin: auto auto;
+}
+.imagen .titulo h1 {
+   text-align: center;
+   color: #f8f9fa;
+}
+
+.catalogoNuevo{
+    width: 90%;
+    text-align: center;
+    justify-content: center;
+    margin: auto auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.card{
+    border: none;
+}
+
+/* Footer */
+footer {
+    padding-top: 60px;
+}
+
+footer h6 {
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li a {
+    font-family: 'Lato-Thin', sans-serif;
+    text-decoration: none;
+    color: inherit;
+    opacity: 0.6;
+    line-height: 2;
+    font-size: 16px;
+}
+
+footer .footerServicios {
+    padding-left: 7%;
+}
+
+@media (max-width: 768px) {
+    footer .footerServicios {
+        padding-left: 0%;
+        text-align: center;
+    }
+}
+
+footer .acercaDe {
+    padding-left: 7%;
+}
+
+@media (max-width: 768px) {
+    footer .acercaDe {
+        padding-left: 0%;
+        text-align: center;
+    }
+}
+
+footer .info {
+    padding-right: 6%;
+    font-size: 17px;
+    line-height: 1.9;
+}
+
+@media (max-width: 768px) {
+    footer .info {
+        padding: 10%;
+        text-align: center;
+    }
+}
+
+footer .info p {
+    color: #777A7D;
+    font-family: 'Lato-Thin', sans-serif;
+    text-align: justify;
+}
+
+footer .redes {
+    margin-top: 40px;
+}
+
+footer .redes a {
+    padding: 50px 20px;
+}
+
+footer .redes a img {
+    width: 30px;
+}
+
+footer .redes p {
+    font-family: 'Lato-Thin', sans-serif;
 }
