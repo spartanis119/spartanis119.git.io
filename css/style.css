@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'SawarabiGothic';
+}
+
+@font-face {
+    font-family: 'SawarabiGothic';
+    src: url('../fonts/SawarabiGothic.ttf');
+}
+
+/* Header */
+
+header {
+    background: url('../img/1.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}
+
+body{
+    background-color: #000000;
+}
+/* Menú */
+
+
+#contentHeader {
+    padding-top: 15px;
+}
+
+.menu a svg {
+    float: left;
+    width: 150px;
+}
+@media (max-width: 730px) {
+    .menu a svg {
+        float: left;
+        width: 100px;
+    }
+}
+
+.menu ul {
+    text-align: right;
+    list-style: none;
+    float: right;
+    /*  background-color:  gray; */
+}
+
+.menu ul li {
+    display: inline-block;
+    padding: 15px 20px;
+    transition: all 0.4s ease;
+}
+@media (max-width: 730px) {
+    .menu ul li {
+        display: inline-block;
+        padding: 15px 2px;
+        transition: all 0.4s ease;
+    }
+}
+
+.menu ul li:hover {
+    transform: scale(1.1);
+}
+
+.menu ul li:hover a {
+    border-bottom: 2px solid #ffffff;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+}
+@media (max-width: 730px) {
+    .menu ul li a {
+        font-size: 15px;
+    }
+}
+
+/* Titulo */
+header h1 {
+    /* display: inline-block; */
+    position: absolute;
+    top: 50vh;
+    left: 10vw;
+    width: 80% !important;
+
+    font-size: 45px;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 10px 10px 10px #000000;
+    border-bottom: 5px solid#ffffff;
+    font-family: 'Lato', sans-serif;
+}
+
+/* Contenido */
+
+.quienSomos{
+    width: 70%;
+    margin: auto auto;
+    padding: 50px 0px;
+}
+.quienSomos p{
+    font-size: 21px;
+    font-family: 'Lato', sans-serif;
+}
+.ubicanos{
+    width: 70%;
+    margin: auto auto;
+    padding: 50px 0px;
+}
+.ubicanos p{
+    font-size: 21px;
+    font-family: 'Lato', sans-serif;
+ }

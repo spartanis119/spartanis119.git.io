@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'SawarabiGothic';
+}
+
+@font-face {
+    font-family: 'SawarabiGothic';
+    src: url('../fonts/SawarabiGothic.ttf');
+}
+
+/* Body*/
+body {
+    background: url('../img/1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Menú */
+
+
+#contentHeader {
+    padding-top: 15px;
+}
+
+.menu a svg {
+    float: left;
+    width: 150px;
+}
+
+@media (max-width: 730px) {
+    .menu a svg {
+        float: left;
+        width: 100px;
+    }
+}
+
+.menu ul {
+    text-align: right;
+    list-style: none;
+    float: right;
+    /*  background-color:  gray; */
+}
+
+.menu ul li {
+    display: inline-block;
+    padding: 15px 20px;
+    transition: all 0.4s ease;
+}
+
+@media (max-width: 730px) {
+    .menu ul li {
+        display: inline-block;
+        padding: 15px 2px;
+        transition: all 0.4s ease;
+    }
+}
+
+.menu ul li:hover {
+    transform: scale(1.1);
+}
+
+.menu ul li:hover a {
+    border-bottom: 2px solid #ffffff;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+@media (max-width: 730px) {
+    .menu ul li a {
+        font-size: 15px;
+    }
+}
+
+/* Titulo */
+
+.titulo {
+    margin-top: 20px;
+}
+
+/* Contenido del catalogo */
+main {
+    margin-top: 80px;
+}
+
+main .contenido {
+    width: 80vw;
+}
+.contenido .card{
+    margin-bottom: 50px;
+}
