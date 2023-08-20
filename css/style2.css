@@ -152,7 +152,6 @@ main h2 {
     display: none;
     background-color: #111111bd;
     z-index: 1000;
-    transition: opacity 0.6s;
 }
 
 .col-formulario {

@@ -9,14 +9,6 @@ function mostrarModal() {
     modal.style.display = 'block';
 }
 
-let cerrar = document.getElementById('btn-cerrar');
-cerrar.addEventListener('click', function (e) {
-    modal.style.display = 'none';
-    error.style.display = 'none';
-    formulario.reset();
-    e.preventDefault();
-})
-
 let formulario = document.getElementById('formulario');
 let modelo = formulario.modelo;
 let nombre = formulario.nombre;
@@ -117,6 +109,15 @@ function validarTerminos(e) {
         return true;
     }
 }
+
+let cerrar = document.getElementById('btn-cerrar');
+cerrar.addEventListener('click', function (e) {
+    modal.style.display = 'none';
+    error.style.display = 'none';
+    formulario.reset();
+    e.preventDefault();
+})
+
 
 function validarFormulario(e) {
     error.innerHTML = '';
