@@ -30,6 +30,47 @@
   </header>
   <main>
     <div class="container-fluid">
+      <div class="row contenedor-formulario">
+        <div class="col col-formulario">
+          <form action="" id="formulario" method="get" onsubmit="">
+            <h1 class="pb-2 text-center">Solicita tu cotización</h1>
+            <label class="form-label">Seleccione su modelo</label>
+            <select class="form-select" name="modelo">
+              <option value="---">---</option>
+              <option value="Cadillac CT4">Cadillac CT4</option>
+              <option value="Rolls-Royce Ghost">Rolls-Royce Ghost</option>
+              <option value="Lexus LS 300">Lexus LS 300</option>
+              <option value="Aston Martin DB12">Aston Martin DB12</option>
+              <option value="Lexus RX 350">Lexus RX 350</option>
+              <option value="Cadillac Escalade">Cadillac Escalade</option>
+              <option value="BMW Serie 7">BMW Serie 7</option>
+              <option value="Audi A8">Audi A8</option>
+              <option value="Bentley Flying Spur">Bentley Flying Spur</option>
+            </select>
+            <label class="form-label">Nombres</label>
+            <input type="text" name="nombre" class="form-control">
+            <label class="form-label">Apellidos</label>
+            <input type="text" name="apellido" class="form-control">
+            <label class="form-label">Direccion</label>
+            <input type="text" name="direccion" class="form-control">
+            <label class="form-label">Teléfono</label>
+            <input type="text" name="telefono" class="form-control">
+            <label class="form-label">Correo</label>
+            <input type="email" name="correo" class="form-control">
+            <p>Autorización de tratamiento de datos personales</p>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" name="terminos">
+              <label class="form-check-label" for="exampleCheck1">Acepto las politicas de privacidad</label>
+            </div>
+            <ul id="error">
+
+            </ul>
+            <button type="submit" class="btn btn-outline-success" id="btn-enviar">Enviar</button>
+            <button type="submit" class="btn btn-outline-danger" id="btn-cerrar">Cerrar</button>
+
+          </form>
+        </div>
+      </div>
       <div class="row imagen">
         <div class="col titulo">
           <h1>Conoce nuestros autos</h1>
@@ -48,7 +89,7 @@
               <li class="list-group-item"><b>Motor </b> 4 Cilindros</li>
               <li class="list-group-item"><b>Potencia </b> 325 Hp</li>
             </ul>
-            <a href="#" class="btn btn-primary">Cotizar</a>
+            <a href="#" class="btn btn-primary btn-cotizar">Cotizar</a>
           </div>
         </div>
         <div class="card  bg-transparent col-md-4 col-sm-12 ">
@@ -62,7 +103,7 @@
               <li class="list-group-item"><b>Motor </b> V12</li>
               <li class="list-group-item"><b>Potencia</b> 591 Hp</li>
             </ul>
-            <a href="#" class="btn btn-primary">Cotizar</a>
+            <a href="#" class="btn btn-primary btn-cotizar">Cotizar</a>
           </div>
         </div>
         <div class="card  bg-transparent col-md-4 col-sm-12 ">
@@ -76,7 +117,7 @@
               <li class="list-group-item"><b>Motor </b> 4 Cilindros</li>
               <li class="list-group-item"><b>Potencia</b> 241 Hp</li>
             </ul>
-            <a href="#" class="btn btn-primary">Cotizar</a>
+            <a href="#" class="btn btn-primary btn-cotizar">Cotizar</a>
           </div>
         </div>
         <div class="card  bg-transparent col-md-4 col-sm-12 ">
@@ -90,7 +131,7 @@
               <li class="list-group-item"><b>Motor </b> V8</li>
               <li class="list-group-item"><b>Potencia </b> 671 Hp</li>
             </ul>
-            <a href="#" class="btn btn-primary">Cotizar</a>
+            <a href="#" class="btn btn-primary btn-cotizar">Cotizar</a>
           </div>
         </div>
         <div class="card  bg-transparent col-md-4 col-sm-12 ">
@@ -104,7 +145,7 @@
               <li class="list-group-item"><b>Motor </b> V6</li>
               <li class="list-group-item"><b>Potencia</b> 275 Hp</li>
             </ul>
-            <a href="#" class="btn btn-primary">Cotizar</a>
+            <a href="#" class="btn btn-primary btn-cotizar">Cotizar</a>
           </div>
         </div>
         <div class="card  bg-transparent col-md-4 col-sm-12 ">
@@ -118,7 +159,7 @@
               <li class="list-group-item"><b>Motor </b> V8</li>
               <li class="list-group-item"><b>Potencia</b> 682 Hp</li>
             </ul>
-            <a href="#" class="btn btn-primary">Cotizar</a>
+            <a href="#" class="btn btn-primary btn-cotizar">Cotizar</a>
           </div>
         </div>
         <div class="card  bg-transparent col-md-4 col-sm-12 ">
@@ -132,7 +173,7 @@
               <li class="list-group-item"><b>Motor </b> V8</li>
               <li class="list-group-item"><b>Potencia </b> 426 Hp</li>
             </ul>
-            <a href="#" class="btn btn-primary">Cotizar</a>
+            <a href="#" class="btn btn-primary btn-cotizar">Cotizar</a>
           </div>
         </div>
         <div class="card  bg-transparent col-md-4 col-sm-12 ">
@@ -146,7 +187,7 @@
               <li class="list-group-item"><b>Motor </b> V6</li>
               <li class="list-group-item"><b>Potencia</b> 335 Hp</li>
             </ul>
-            <a href="#" class="btn btn-primary">Cotizar</a>
+            <a href="#" class="btn btn-primary btn-cotizar">Cotizar</a>
           </div>
         </div>
         <div class="card  bg-transparent col-md-4 col-sm-12 ">
@@ -160,7 +201,7 @@
               <li class="list-group-item"><b>Motor </b> V8</li>
               <li class="list-group-item"><b>Potencia</b> 534 Hp</li>
             </ul>
-            <a href="#" class="btn btn-primary">Cotizar</a>
+            <a href="#" class="btn btn-primary btn-cotizar">Cotizar</a>
           </div>
         </div>
       </div>
@@ -177,7 +218,7 @@
               <li class="list-group-item"><b>Motor </b> 4 Cilindros</li>
               <li class="list-group-item"><b>Potencia </b> 325 Hp</li>
             </ul>
-            <a href="#" class="btn btn-primary">Cotizar</a>
+            <a href="#" class="btn btn-primary btn-cotizar">Cotizar</a>
           </div>
         </div>
         <div class="card  bg-transparent col-md-4 col-sm-12 ">
@@ -191,7 +232,7 @@
               <li class="list-group-item"><b>Motor </b> V12</li>
               <li class="list-group-item"><b>Potencia</b> 591 Hp</li>
             </ul>
-            <a href="#" class="btn btn-primary">Cotizar</a>
+            <a href="#" class="btn btn-primary btn-cotizar">Cotizar</a>
           </div>
         </div>
         <div class="card  bg-transparent col-md-4 col-sm-12 ">
@@ -205,7 +246,7 @@
               <li class="list-group-item"><b>Motor </b> 4 Cilindros</li>
               <li class="list-group-item"><b>Potencia</b> 241 Hp</li>
             </ul>
-            <a href="#" class="btn btn-primary">Cotizar</a>
+            <a href="#" class="btn btn-primary btn-cotizar">Cotizar</a>
           </div>
         </div>
         <div class="card  bg-transparent col-md-4 col-sm-12 ">
@@ -219,7 +260,7 @@
               <li class="list-group-item"><b>Motor </b> V8</li>
               <li class="list-group-item"><b>Potencia </b> 671 Hp</li>
             </ul>
-            <a href="#" class="btn btn-primary">Cotizar</a>
+            <a href="#" class="btn btn-primary btn-cotizar">Cotizar</a>
           </div>
         </div>
         <div class="card  bg-transparent col-md-4 col-sm-12 ">
@@ -233,7 +274,7 @@
               <li class="list-group-item"><b>Motor </b> V6</li>
               <li class="list-group-item"><b>Potencia</b> 275 Hp</li>
             </ul>
-            <a href="#" class="btn btn-primary">Cotizar</a>
+            <a href="#" class="btn btn-primary btn-cotizar">Cotizar</a>
           </div>
         </div>
         <div class="card  bg-transparent col-md-4 col-sm-12 ">
@@ -247,7 +288,7 @@
               <li class="list-group-item"><b>Motor </b> V8</li>
               <li class="list-group-item"><b>Potencia</b> 682 Hp</li>
             </ul>
-            <a href="#" class="btn btn-primary">Cotizar</a>
+            <a href="#" class="btn btn-primary btn-cotizar">Cotizar</a>
           </div>
         </div>
         <div class="card  bg-transparent col-md-4 col-sm-12 ">
@@ -261,7 +302,7 @@
               <li class="list-group-item"><b>Motor </b> V8</li>
               <li class="list-group-item"><b>Potencia </b> 426 Hp</li>
             </ul>
-            <a href="#" class="btn btn-primary">Cotizar</a>
+            <a href="#" class="btn btn-primary btn-cotizar">Cotizar</a>
           </div>
         </div>
         <div class="card  bg-transparent col-md-4 col-sm-12 ">
@@ -275,7 +316,7 @@
               <li class="list-group-item"><b>Motor </b> V6</li>
               <li class="list-group-item"><b>Potencia</b> 335 Hp</li>
             </ul>
-            <a href="#" class="btn btn-primary">Cotizar</a>
+            <a href="#" class="btn btn-primary btn-cotizar">Cotizar</a>
           </div>
         </div>
         <div class="card  bg-transparent col-md-4 col-sm-12 ">
@@ -289,13 +330,12 @@
               <li class="list-group-item"><b>Motor </b> V8</li>
               <li class="list-group-item"><b>Potencia</b> 534 Hp</li>
             </ul>
-            <a href="#" class="btn btn-primary">Cotizar</a>
+            <a href="#" class="btn btn-primary btn-cotizar">Cotizar</a>
           </div>
         </div>
       </div>
     </div>
   </main>
-
   <!-- Footer -->
 
   <footer class="bg-light">
@@ -335,6 +375,7 @@
   </footer>
   <!-- Bootstrap Java script -->
   <script src="../js/bootstrap.min.js"></script>
+  <script src="../js/modals.js"></script>
 </body>
 
 </html>

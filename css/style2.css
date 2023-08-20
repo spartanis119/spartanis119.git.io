@@ -12,8 +12,8 @@
 
 /* Body*/
 body {
-    background-color:#101114 ;
-   /*   */
+    background-color: #101114;
+    /*   */
 }
 
 
@@ -99,7 +99,7 @@ body {
 
 /* Contenido */
 
-main h2{
+main h2 {
     border-bottom: 2px solid #f8f9fa;
     width: 40%;
     margin: auto auto;
@@ -114,16 +114,18 @@ main h2{
     height: 500px;
     position: relative;
 }
+
 .imagen .titulo {
     width: 80%;
     margin: auto auto;
 }
+
 .imagen .titulo h1 {
-   text-align: center;
-   color: #f8f9fa;
+    text-align: center;
+    color: #f8f9fa;
 }
 
-.catalogoNuevo{
+.catalogoNuevo {
     width: 90%;
     text-align: center;
     justify-content: center;
@@ -131,9 +133,53 @@ main h2{
     margin-top: 100px;
     margin-bottom: 100px;
 }
-.card{
+
+.card {
     border: none;
 }
+
+.contenedor-formulario {
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    display: none;
+    background-color: #111111bd;
+    z-index: 1000;
+    transition: opacity 0.6s;
+}
+
+.col-formulario {
+    background-color: #f8f9fa;
+    width: 60%;
+    margin: auto auto;
+    padding-bottom: 30px;
+}
+
+.formulario {
+    width: 80%;
+    margin: auto;
+}
+
+
+.formulario .formularioContenido textarea {
+    padding: 20px;
+}
+
+.form-label {
+    font-weight: 500;
+}
+
+.formulario .error {
+    display: none;
+}
+
 
 /* Footer */
 footer {
